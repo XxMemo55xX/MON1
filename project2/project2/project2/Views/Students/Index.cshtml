@@ -1,0 +1,27 @@
+﻿@model List<Student>
+
+@{
+    Layout = "_Layout2";
+}
+
+<h1>@ViewBag.Title</h1>
+<p style="background-color: cornflowerblue"> 
+    Lorem ipsum.....
+</p>
+<table class="mui-table">
+    <thead>
+        <tr>Name</tr>
+        <tr>Last name</tr>
+        <tr>Email</tr>
+    </thead>
+    <tbody>
+        @foreach(Student st in Model)
+        {
+            <tr>
+                <td>@st.Name</td>
+                <td>@st.LastName</td>
+                <td>@st.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>

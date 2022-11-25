@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Project 2 Site</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+        <script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
+    </head>
+    <body>
+        <div class="mui-container">
+            <div class="multi-panel">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                            <ul class="mui-panel">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </ul>
+                </div>
+                <h1>Project 2 Site</h1>
+                @RenderBody()
+            </div>
+            <footer>
+                2022 M3MO
+            </footer>
+        </div>
+    </body>
+</html>
